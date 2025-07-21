@@ -99,6 +99,7 @@ body {
 
 .highlight {
     color: #f39c12;
+    font-weight: 600;
 }
 
 .hero-subtitle {
@@ -492,4 +493,115 @@ body {
     .project-links {
         flex-direction: column;
     }
+}
+
+
+/* เพิ่มใน style.css */
+.hero-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-image img {
+    animation: fadeIn 1.5s ease-out, float 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-15px); }
+}
+
+
+
+/* เพิ่มใน style.css */
+.skill-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0.3) 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.skill-item:hover::after {
+    transform: scaleY(1);
+    
+}
+
+
+
+/* เพิ่มใน style.css */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://example.com/pattern.png');
+    opacity: 0.1;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+    background: rgba(26, 26, 26, 0.95) !important;
+}
+
+.dark-mode .nav-link {
+    color: #f0f0f0;
+}
+
+.dark-mode .section-title {
+    color: #f0f0f0;
+}
+
+.dark-mode .skill-item,
+.dark-mode .project-card {
+    background: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.dark-mode .contact-form {
+    background: #2a2a2a;
 }
