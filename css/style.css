@@ -496,7 +496,7 @@ body {
 }
 
 
-/* เพิ่มใน style.css */
+/* เพิ่ม Animation  */
 .hero-content {
     animation: fadeInUp 1s ease-out;
 }
@@ -528,7 +528,7 @@ body {
 
 
 
-/* เพิ่มใน style.css */
+/* เพิ่ม Hover Effects สำหรับ Skill Items */
 .skill-item {
     position: relative;
     overflow: hidden;
@@ -555,7 +555,7 @@ body {
 
 
 
-/* เพิ่มใน style.css */
+/* Parallax Effect สำหรับ Hero Section */
 .hero {
     position: relative;
     overflow: hidden;

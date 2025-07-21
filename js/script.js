@@ -60,7 +60,7 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 
-// เพิ่มใน script.js
+// Typewriter Effect สำหรับ Hero Title
 function typeWriter(element, text, speed) {
     let i = 0;
     function typing() {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// เพิ่มใน script.js
+// Animate On Scroll
 function animateOnScroll() {
     const elements = document.querySelectorAll('.skill-item, .project-card, .about-content');
     
@@ -106,7 +106,7 @@ document.querySelectorAll('.skill-item, .project-card, .about-content').forEach(
 window.addEventListener('scroll', animateOnScroll);
 
 
-// เพิ่มใน script.js
+// Dark Mode Toggle
 const darkModeToggle = document.createElement('div');
 darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
 darkModeToggle.style.position = 'fixed';
@@ -138,7 +138,7 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 
-// ปรับปรุง contact form ใน script.js
+// Form Validation แบบ Real-time
 const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
 
 formInputs.forEach(input => {
